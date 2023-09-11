@@ -39,9 +39,16 @@
           <!-- Description and details -->
           <div>
             <div class="my-7"> Price - ${{ product.price }}</div>
+
             <div class="space-y-6">
               <h3 class="font-bold border-b-2 my-7">Product description</h3>
               <p class="text-base text-gray-900"> {{ product.description }}</p>
+
+              <button class="btn flex">
+                <i class="material-icons mr-2">add_shopping_carts</i>
+                <span>Add To Cart</span>
+              </button>
+
             </div>
           </div>
 
@@ -54,8 +61,11 @@
 
 <script setup>
 const {product} = defineProps(['product'])
+
 </script>
 
 <style scoped>
-
+img {
+  max-width: 400px;
+}
 </style>

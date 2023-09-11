@@ -1,12 +1,12 @@
 <template>
-  <ProductDetails :product="product"></ProductDetails>
-  <!--  <div>-->
-  <!--    <p>Product details for {{ product.id }}</p>-->
-  <!--    <p>-->
-  <!--      {{ product.title }}-->
+  <div>
+    <Head>
+      <Title> {{product.title}}</Title>
+      <Meta name="description" :content="product.description"></Meta>
+    </Head>
+    <ProductDetails :product="product"></ProductDetails>
+  </div>
 
-  <!--    </p>-->
-  <!--  </div>-->
 </template>
 
 <script setup>
